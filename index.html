@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background-color: #fff0fe;
+        }
+    </style>
+
+</head>
+<style>
+    form {
+        background-color: rgb(186, 153, 216);
+        padding: 5px;
+        width: 700px;
+        text-align: center;
+        margin: 400px;
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        padding: 30px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-style: italic;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="DOB"],
+    select {
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    button {
+        background-color: black;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 15px;
+        width:80px;
+    }
+</style>
+
+<body>
+    <div>
+        <form>
+            <h1>Registration Form</h1>
+            <div>
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                 <div>
+                <label for="name">Last Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+
+            <div>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+            </div>
+            <div>
+                <label for="DOB">Date Of Birth</label>
+                <input type="date" id="DOB" name="DOB" required><br><br>
+            </div>
+            <div>
+                <label for="Gender">Gender:</label>
+                <input type="radio" id="Male" name="Gender" value="Male">Male
+                <input type="radio" id="Female" name="Gender" value="Female">Female
+                <input type="radio" id="Other" name="Gender" value="Other">Other<br><br>
+            </div>
+            <div>
+                <label for="Phone Number">Phone Number:</label>
+                <input type="text" id="Phone" name="Phone" required><br><br>
+            </div>
+            <div>
+                <label for="Subject">Subject</label>
+                <select id="Subject" name="Subject">
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="UI/UX">UI/UX</option>
+                    <option value="AI">AI</option>
+                    <option value="AWS">AWS</option>
+                </select><br><br>
+            </div>
+
+            <button style="color: white;">submit</button>
+
+        </form>
+
+    </div>
+</body>
+
+</html>
+</body>
+
+</html>
