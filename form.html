@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        * {
+            box-sizing: content-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg,#00ffc8e8,#8400ff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+
+        .form-container {
+            background-color: rgb(237, 240, 245);
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 20px;
+            font-weight: 500;
+            color:#333;
+        }
+
+        .form-grid {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+
+        label {
+            margin-bottom: 5px;
+            font-size: 15px;
+            color:#333
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 1px;
+            font-size:14px;
+
+        }
+
+        .gender-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">First Name:</label>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                </div>
+                <div class="form-grid">
+                    <label for="name">Last Name:</label>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                </div>
+                <div class="form-grid">
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="enter your email" name="email" required><br><br>
+                </div>
+                <div class="form-grid">
+                    <label for="DOB">Date Of Birth:</label>
+                    <input type="date" id="DOB" name="DOB" required><br><br>
+                </div>
+                <div class="gender-group">
+                    <label for="Gender">Gender:</label>
+                    <input type="radio" id="Male" name="gender" value="Male">Male
+                    <input type="radio" id="Female" name="gender" value="Female">Female
+                    <input type="radio" id="other" name="gender" value="other">Other<br><br>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="Phone">Phone number</label>
+                        <input type="text" id="Phone" name="Phone" required><br><br>
+                    </div>
+                    <div>
+                        <label for="Subject">Subject</label>
+                        <select id="Subject" name="Subject">
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="UI/UX">UI/UX</option>
+                            <option value="AI">AI</option>
+                            <option value="AWS">AWS</option>
+                        </select><br><br>
+                    </div>
+                    <button style="color: rgb(27, 26, 26);">submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
