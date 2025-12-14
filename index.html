@@ -1,113 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <style>
-        body {
-            background-color: #fff0fe;
-        }
-    </style>
-
+    <title>Profile Card</title>
 </head>
 <style>
-    form {
-        background-color: rgb(186, 153, 216);
-        padding: 5px;
-        width: 700px;
-        text-align: center;
-        margin: 400px;
-    }
-
-    body {
+    body{
+        background-color: rgba(0, 213, 255, 0.345);
         font-family: 'Times New Roman', Times, serif;
-        padding: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
-    label {
-        display: block;
-        margin-bottom: 5px;
-        font-style: italic;
+    .card{
+        background-color: rgba(255, 127, 80, 0.548);
+        padding: 20px;
+        border-radius: 15px;
+        width: 250px;
+        height: auto;
     }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="DOB"],
-    select {
-        width: 50%;
-        padding: 10px;
-        border-radius: 5px;
+    .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+   .card h3{
+        margin: 10px 0;
     }
-
-    button {
+    .card p{
+        font-size: medium;
+        font-style: inherit;
+        margin: 10px 0 20px 0;
+    }
+   .card button{
         background-color: black;
-        padding: 10px 20px;
+        color: white;
+        padding: 10px 15px;
+        margin: 5px;
         border: none;
-        cursor: pointer;
         border-radius: 5px;
-        font-size: 15px;
-        width:80px;
+        cursor: pointer;
     }
+    .card button:hover {
+    background-color: dodgerblue;
+    color: white;
+  }
 </style>
-
 <body>
-    <div>
-        <form>
-            <h1>Registration Form</h1>
-            <div>
-                <label for="name">First Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-
-                 <div>
-                <label for="name">Last Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-            </div>
-            
-            <div>
-                <label for="email">Email:</label>
-
-                <input type="email" id="email" name="email" required><br><br>
-            </div>
-
-            <div>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br><br>
-            </div>
-            <div>
-                <label for="DOB">Date Of Birth</label>
-                <input type="date" id="DOB" name="DOB" required><br><br>
-            </div>
-            <div>
-                <label for="Gender">Gender:</label>
-                <input type="radio" id="Male" name="Gender" value="Male">Male
-                <input type="radio" id="Female" name="Gender" value="Female">Female
-                <input type="radio" id="Other" name="Gender" value="Other">Other<br><br>
-            </div>
-            <div>
-                <label for="Phone Number">Phone Number:</label>
-                <input type="text" id="Phone" name="Phone" required><br><br>
-            </div>
-            <div>
-                <label for="Subject">Subject</label>
-                <select id="Subject" name="Subject">
-                    <option value="Python">Python</option>
-                    <option value="Java">Java</option>
-                    <option value="UI/UX">UI/UX</option>
-                    <option value="AI">AI</option>
-                    <option value="AWS">AWS</option>
-                </select><br><br>
-            </div>
-
-            <button style="color: white;">submit</button>
-
-        </form>
+    <div class="card">
+        <img src="MY.jpeg" alt="Profile Picture" width="200" height="200">
+        <h3>Name: Poojitha Karnaina</h3>
+        <p>Computer Science student passionate about web development and UI/UX design.</p>
+        <button type="edit">Edit Profile</button>
+        <button type="view">View Profile</button>
 
     </div>
 </body>
-
-</html>
-</body>
-
 </html>
