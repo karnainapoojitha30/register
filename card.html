@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+</head>
+<style>
+    body{
+        background-color: rgba(0, 213, 255, 0.345);
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .card{
+        background-color: rgba(255, 127, 80, 0.548);
+        padding: 20px;
+        border-radius: 15px;
+        width: 250px;
+        height: auto;
+    }
+    .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+   .card h3{
+        margin: 10px 0;
+    }
+    .card p{
+        font-size: medium;
+        font-style: inherit;
+        margin: 10px 0 20px 0;
+    }
+   .card button{
+        background-color: black;
+        color: white;
+        padding: 10px 15px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .card button:hover {
+    background-color: dodgerblue;
+    color: white;
+  }
+</style>
+<body>
+    <div class="card">
+        <img src="MY.jpeg" alt="Profile Picture" width="200" height="200">
+        <h3>Name: Poojitha Karnaina</h3>
+        <p>Computer Science student passionate about web development and UI/UX design.</p>
+        <button type="edit">Edit Profile</button>
+        <button type="view">View Profile</button>
+
+    </div>
